@@ -26,19 +26,28 @@ This repository is a **showcase**. It describes what each product does, how it i
 
 ---
 
-## 2. ORYM — life-organizer mobile app (v1)
+## 2. ITER — life-organizer mobile app (first version of ORYM)
 
-**What it is.** A personal organizer for tasks, calendar, budget and life records, with one differentiator: **AI Mode**. Through an MCP server, users connect their own AI assistant (Claude, ChatGPT) and manage the app by conversation, while a full **Manual Mode** keeps the app usable without AI.
+**What it is.** A dark-mode personal organizer that brings tasks, priorities, habits, budget, appointments and family records (kids and pets) into one app. Its differentiator is **AI Mode**: through an MCP server, users connect their own AI assistant (Claude, ChatGPT) and run the app by conversation, while a full **Manual Mode** keeps it usable without AI.
+
+| Today | Kanban | Budgets |
+|---|---|---|
+| ![Today](images/iter/today.png) | ![Kanban](images/iter/kanban.png) | ![Budgets](images/iter/budgets.png) |
+
+| Priority dashboard | Eisenhower matrix |
+|---|---|
+| ![Priorities](images/iter/priorities.png) | ![Eisenhower](images/iter/eisenhower.png) |
 
 **Highlights**
 
-- Mobile app built with React Native + Expo (SDK 54); Android build produced and tested on device.
-- Supabase backend with row-level security; multi-user MCP server deployed 24/7 on Railway with a validated read/write cycle.
-- Google Calendar integration, statistics tab, swipe navigation, account deletion.
+- React Native + Expo (mobile and web) in a TypeScript monorepo; Android build produced and tested on device.
+- Supabase backend with row-level security and optional family-space sync; multi-user MCP server with OAuth deployed 24/7 on Railway.
+- Productivity score, Kanban and Eisenhower views, habits with streaks, multi-currency budget with targets and receipt OCR, Google Calendar integration.
 - Six languages (EN, ES, DE, IT, FR, PT).
-- CI on GitHub Actions (unit, end-to-end and visual tests, release pipeline).
+- Quality built in: 250+ Storybook visual-regression snapshots, unit and end-to-end tests, CI/CD on GitHub Actions.
+- A written development process: pre-flight checklist before each stage, lessons learned during it, and a post-stage audit.
 
-**Stack:** React Native · Expo · TypeScript · Supabase · Railway · MCP · GitHub Actions · EAS Build
+**Stack:** React Native · Expo · TypeScript · Supabase · Railway · MCP · Storybook · GitHub Actions · EAS Build
 
 ---
 
